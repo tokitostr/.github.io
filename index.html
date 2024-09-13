@@ -41,9 +41,61 @@
 
     <form id="link">
     <h1>Форма</h1>
+      
+    <form action="/"
+      method="POST">
       <label>
         ФИО:<br />
-        <input name="fioname" placeholder="Введите имя">
+        <input type="text" name="fioname" placeholder="Введите имя">
       </label><br />
+      <input type=”tel”>
+      <label>
+        email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+      <label>
+        Дата рождения:<br />
+        <input name="birthday"
+          type="date" 
+          placeholder="00-00-0000"/>
+      </label><br />
+      Пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Женский" />
+        Женский</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Мужской" />
+        Мужской</label><br />
+      <label>
+        Любимый язык программирования:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Pascal">Pascal</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Haskel">Haskel</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Prolog">Prolog</option>
+          <option value="Scala">Scala</option>
+        </select>
+      </label><br />
+      <label>
+        Биография:<br />
+        <textarea name="boigr"></textarea>
+      </label><br />
+       С контрактом ознакомлен(а):<br />
+      <label><input type="checkbox"
+        name="check" />
+        Подпись чекбокса ставим справа
+      </label><br />
+      <input type="submit" value="Отправить" />
+    </form>
 </body>
 </html>
