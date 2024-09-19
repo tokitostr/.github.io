@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" />
+
+  <title> Задание 2 </title>
+</head>
+
+<body>
+    <header>
+      <nav>
+        <a href="">Главная</a>
+        <a href="">О нас</a>
+        <a href="">Контакты</a>
+      </nav>
+
+      <div class="header-content">
+        <img class="logo" src="logo.png" alt="Website Logo" title="Website">
+        <h1 id="sname">tiger</h1>
+      </div>
+    </header>
+    
+    <main>
+      
+      <h1 id="mt">Ссылки</h1>
+      <ul>
+        <li><a href="http://kubsu.ru/">КубГУ</a></li>
+        <li><a href="https://kubsu.ru"> КубГУ (защищённая ссылка)</a> </li>
+        <li><a href="http://kubsu.ru/"><img src="image.jpg" alt=" " style="width: 100px;" /></a></li>
+        <li><a href="/hhh.html">Внутренняя страница</a></li>
+        <li><a href="/">Главная страница</a></li>
+        <li><a href="#form">Ссылка на фрагмент текущей страницы; </a></li> 
+        <li><a href="https://www.google.com/?a=12&b=11&c=1">3 Параметра</a></li>
+        <li><a href="https://www.google.com/?id=1123a3">Параметр id</a></li>
+        <li><a href="./hhh.html">Относительная ссылка на страницу</a></li>
+        <li><a href="./about/index.html"> about </a></li>
+        <li><a href="../onelevelup.html"> Уровень выше текущего </a></li>
+        <li><a href="../../twolevelup.html"> Два уровня выше текущего </a></li>
+        <li><p>Текущая <a href="/hhh.html">ссылка</a> приведёт нас на внутреннюю страницу</p></li>
+        <li><a href="https://ru.wikipedia.org/wiki/Дельфины#Места_обитания"> Ссылка на фрагмент другого сайта </a></li>
+        <li>
+          <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    
+            <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://ru.wikipedia.org/wiki/Компьютер">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://ru.wikipedia.org/wiki/Телефон">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://ru.wikipedia.org/wiki/Кофе">
+            </map>
+        </li>
+        <li><a href="">Пустой href</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="https://www.wikipedia.org/" rel="nofollow">Cсылка, по которой запрещен переход поисковикам</a></li>
+        <li> <a href="./about/index.html">Ссылка запрещённая на индексацию</a></li>
+        <li><a href="ftp://user:pass123@example.com">FTP</a></li>
+      </ul>
+         <ol>
+        <li><a href="https://ru.wikipedia.org/wiki/Дельфины" title="Дельфины (Ru)">Wiki Ru</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Dolphin" title="Dolphin (En)">Wiki En</a></li>
+        <li><a href="https://it.wikipedia.org/wiki/Delfino" title="Delfino (It)">Wiki It</a></li>
+      </ol>
+    
+
+
+      <table>
+          <thead>
+              <tr>
+                  <th>Фирма</th>
+                  <th>Наименование</th>
+                  <th>Цена</th>
+                  <th>Итого за день</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Bosch</td>
+                  <td>Пылесос</td>
+                  <td colspan="2">12000</td>
+              </tr>
+              <tr>
+                  <td>LG</td>
+                  <td>Телевизор</td>
+                  <td>30000</td>
+                  <td>90000</td>
+              </tr>
+              <tr>
+                  <td>Samsung</td>
+                  <td>Ноутбук</td>
+                  <td colspan="2">71400</td>
+              </tr>
+              <tr>
+                  <td>Samsung</td>
+                  <td>Телевизор</td>
+                  <td>53000</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>LG</td>
+                  <td>Пылесос</td>
+                  <td>23000</td>
+                  <td>46000</td>
+              </tr>
+              <tr>
+                  <td>LG</td>
+                  <td>Ноутбук</td>
+                  <td>64000</td>
+                  <td>128000</td>
+              </tr>
+          </tbody>
+      </table>
+      <div id="mt">
+      <h1>Форма</h1>
+        <form id="form">
+        <form action="/"
+          method="POST">
+          <label> 
+          ФИО: <br />
+          <input type="text" name="finame" placeholder="Введите ФИО">
+        </label>
+        <br />
+          
+          <label>
+            Номер телефона: <br />
+             <input type=”tel”>
+          </label><br />
+          
+          <label>
+            email:<br />
+            <input name="field-email"
+              type="email"
+              placeholder="Введите вашу почту" />
+          </label><br />
+          
+          <label>
+            Дата рождения:<br />
+            <input name="birthday"
+              type="date" 
+              placeholder="00-00-0000"/>
+          </label><br />
+          Пол:<br />
+          <label><input type="radio" checked="checked"
+            name="radio-group-1" value="Женский" />
+            Женский</label>
+          <label><input type="radio"
+            name="radio-group-1" value="Мужской" />
+            Мужской</label><br />
+          <label>
+            Любимый язык программирования:
+            <br />
+            <select name="field-name-4[]"
+              multiple="multiple">
+              <option value="Pascal">Pascal</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="Haskel">Haskel</option>
+              <option value="Clojure">Clojure</option>
+              <option value="Prolog">Prolog</option>
+              <option value="Scala">Scala</option>
+            </select>
+          </label><br />
+          <label>
+            Биография:<br />
+            <textarea name="boigr"></textarea>
+          </label><br />
+    
+            
+           <br />
+          <label><input type="checkbox"
+            name="check" />
+            
+            С контрактом ознакомлен(а).
+          </label><br />
+          <input type="submit" value="Отправить" />
+        </form>
+      </div>
+  </main>
+
+  
+    <footer>
+
+        © Постельняк Елизавета
+        
+    </footer>
+</body>
+</html>
