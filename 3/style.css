@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#sname {
+    font-size: 40px;
+    font-family: cursive;
+    color:#f1bbae;
+    font-style: normal;
+}
+
+  
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 116, 3);
+}
+  
+.content {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 906px;
+    max-width: 960px;
+}
+  
+.logo-tiger {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+  
+nav>ul {
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    justify-items: start;
+    gap: 5px;
+    list-style-type: none;
+    overflow: hidden;
+}
+  
+a {
+    color: black;
+}
+  
+
+#mt {
+    text-align: center;
+}
+
+.logo {
+    width: 90px;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 960px;
+    padding: 10px;
+    margin: auto;
+}
+  
+main>.tab {
+    display: flex;
+    flex-direction: column;
+}
+  
+table {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+}
+  
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+  
+th {
+    background-color: #af874c;
+    color: white;
+}
+  
+tr:nth-child(even) {
+    background-color: #cdbbac;
+}
+  
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+  
+footer {
+    background-color: rgb(209, 116, 3);
+    padding: 30px 10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .content>nav>ul {
+        flex-direction: row;
+    }
+    main>.tab {
+      flex-direction: column-reverse;
+    }
+    .content {
+      align-items: center;
+      flex-direction: row;
+    }
+}
