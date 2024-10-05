@@ -1,0 +1,47 @@
+header, footer {
+    background-color: #ae753d;
+    color: #eaeaea;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+header {
+    display: block;
+}
+
+#name{
+    color:#242322;
+    font-size: 40px;
+    font-family: cursive;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+#text {
+    color: black;
+    font-size: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+
+th, td {
+    border: 1px solid #493321;
+    padding: 10px;
+    text-align: center;
+  }
+th {
+    color: rgb(222, 206, 196);
+    background-color: #a39076;
+  }
