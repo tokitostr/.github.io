@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Калькулятор стоимости услуги</h1>
+    <form id="calculator">
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" min="1" value="1"><br><br>
+
+        <label>Выберите печеньки:</label><br>
+        <input type="radio" name="serviceType" value="1" checked>Печенье «Яшкино», 58₽<br>
+        <input type="radio" name="serviceType" value="2">Печенье «Oreo», 157₽<br>
+        <input type="radio" name="serviceType" value="3">Печенье «Юбилейное», 102₽<br><br>
+
+        <div id="options" class="hidden">
+            <label for="optionSelect">Размер:</label>
+            <select id="optionSelect">
+                <option value="0">Маленький</option>
+                <option value="50">Средний (+50₽)</option>
+                <option value="100">Большой (+100₽)</option>
+            </select>
+        </div>
+
+        <div id="properties" class="hidden">
+            <label>
+                <input type="checkbox" id="propertyCheckbox" value="50"> С шоколадной глазурью (+50₽)
+            </label>
+        </div>
+
+        <h2>Итоговая стоимость: <span id="totalPrice">0</span>₽</h2>
+    </form>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
